@@ -23,3 +23,8 @@ a {
 li {
 	font-family: "Tahoma";
 }
+.go-home {
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+}
