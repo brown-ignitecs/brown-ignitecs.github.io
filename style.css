@@ -1,27 +1,21 @@
-h1 {
+body {
 	font-family: "Tahoma";
+}
+
+h1 {
 	background-color: #57B4D0;
 	color: #ffffff;
 	padding: 5px;
-	
 }
 .classy-header {
-	font-family: "Tahoma";
 	background-color: #57B4D0;
 	padding: 5px;
 	color: #ffffff;
 }
-div {
-	font-family: "Tahoma";
-	margin-right: auto;
-	margin-left: auto;
-	width: 500px;
-}
-a {
-	font-family: "Tahoma";
-}
-li {
-	font-family: "Tahoma";
+.content {
+	margin: 1rem auto;
+	max-width: 60rem;
+	padding: 0 1rem;
 }
 .go-home {
 	margin-right: auto;
