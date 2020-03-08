@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Brown IgniteCS Website</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-	
-  </head>
-  <body>
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<img class="go-home" src="./logo.png"></img>
-	<h1>Brown IgniteCS</h1>
-	
-    <h2><span class="classy-header">Creating your own Website!</span></h2>
-	
-	<div>During the next 10 weeks, we will go through how to create a website using HTML, CSS, and JavaScript!  Select the week's lesson below<div><br/>
-	
-	<a href="https://brown-ignitecs.github.io/projects/html.html">Week 1: HTML/CSS</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/variables.html">Week 2: Variables</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/if.html">Week 3: If/Else</a><br/>
-	<!--<a href="https://brown-ignitecs.github.io/projects/loops.html">Week 4: While/For Loops</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/arrays.html">Week 5: Arrays</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/functions.html">Week 6: Functions</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/objects.html">Week 7: Objects</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/animations.html">Week 8: Animations</a><br/>
-	<a href="https://brown-ignitecs.github.io/projects/final.html">Week 9-10: Final Projects</a><br/>-->
-  </body>
+
+<head>
+	<title>Brown IgniteCS Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="content">
+		<img class="go-home" src="./logo.png">
+		<h1>Brown IgniteCS</h1>
+		<h2><span class="classy-header">Creating your own Website!</span></h2>
+
+		<div>During the next 10 weeks, we will go through how to create a website using HTML, CSS, and JavaScript! Select
+			the week's lesson below<div>
+
+				<ul id="week-links">
+					<li id="week-1"><a href="./projects/html.html">Week 1: HTML/CSS</a></li>
+					<li id="week-2"><a href="./projects/variables.html">Week 2: Variables</a></li>
+					<li id="week-3"><a href="./projects/if.html">Week 3: If/Else</a></li>
+					<li id="week-4"><a href="./projects/loops.html">Week 4: While/For Loops</a></li>
+					<li id="week-5"><a href="./projects/arrays.html">Week 5: Arrays</a></li>
+					<li id="week-6"><a href="./projects/functions.html">Week 6: Functions</a></li>
+					<li id="week-7"><a href="./projects/objects.html">Week 7: Objects</a></li>
+					<li id="week-8"><a href="./projects/animations.html">Week 8: Animations</a></li>
+					<li id="week-9"><a href="./projects/final.html">Week 9-10: Final Projects</a></li>
+				</ul>
+
+				<script>
+					document.querySelectorAll('#week-links li').forEach(element => element.style.display = 'none');
+
+					const currentDate = new Date();
+					if (currentDate >= new Date('Feb 8 2020')) {
+						document.getElementById('week-1').style.display = 'block';
+					}
+					if (currentDate >= new Date('Feb 22 2020')) {
+						document.getElementById('week-2').style.display = 'block';
+					}
+					if (currentDate >= new Date('Feb 29 2020')) {
+						document.getElementById('week-3').style.display = 'block';
+					}
+					if (currentDate >= new Date('Mar 7 2020')) {
+						document.getElementById('week-4').style.display = 'block';
+					}
+					if (currentDate >= new Date('Mar 14 2020')) {
+						document.getElementById('week-5').style.display = 'block';
+					}
+					if (currentDate >= new Date('Mar 21 2020')) {
+						document.getElementById('week-6').style.display = 'block';
+					}
+					if (currentDate >= new Date('Apr 4 2020')) {
+						document.getElementById('week-7').style.display = 'block';
+					}
+					if (currentDate >= new Date('Apr 11 2020')) {
+						document.getElementById('week-8').style.display = 'block';
+					}
+					if (currentDate >= new Date('Apr 18 2020')) {
+						document.getElementById('week-9').style.display = 'block';
+					}
+				</script>
+			</div>
+</body>
+
 </html>
